@@ -1,5 +1,6 @@
 import pygame
 from constants import *
+from player import Player
 
 def main():
     pygame.init()
@@ -15,7 +16,6 @@ def main():
         
         screen.fill((0, 0, 0))              # Black Screen
         player.draw(screen)                 # re-render the player on the screen each frame
-
         pygame.display.flip()               
         
         dt = clock.tick(60) / 1000          # limit the framerate to 60 FPS
